@@ -8,6 +8,7 @@ function nextSlide() {
   if (currentSlide > 5) {
     currentSlide = 1;
   }
+
   place.style.backgroundImage = "url(img/slide-" + currentSlide + ".webp";
   currentOpacity = 0;
 
@@ -23,9 +24,9 @@ setInterval(function() {
         place.style.opacity = "0";
       }
     }, 25);
-  }, 4000);*/
+  }, 4000);
 
-  /*if (currentOpacity != 1) {
+  if (currentOpacity != 1) {
     place.style.opacity = String(currentOpacity += 0.01);
   } else {
     place.style.opacity = "1";
