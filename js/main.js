@@ -1,4 +1,5 @@
 var place = document.querySelector('.page-main-slide'),
+    header = document.querySelector('header'),
     currentSlide = 2,
     currentOpacity = 0;
 
@@ -15,20 +16,10 @@ function nextSlide() {
   currentSlide++;
 }
 
-setInterval(function() {
-  /*setTimeout(function() {
-    setInterval(function() {
-      if (currentOpacity != 0) {
-        place.style.opacity = String(currentOpacity -= 0.01);
-      } else {
-        place.style.opacity = "0";
-      }
-    }, 25);
-  }, 4000);
-
-  if (currentOpacity != 1) {
-    place.style.opacity = String(currentOpacity += 0.01);
-  } else {
-    place.style.opacity = "1";
-  }*/
-}, 15);
+window.addEventListener('scroll', function() {
+  if (pageYOffset >= 150) {
+    header.style.background = "#2b2b2b";
+  } else if (pageYOffset <= 150) {
+    header.style.background = "none";
+  }
+});

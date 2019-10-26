@@ -55,7 +55,6 @@ body {
 
 header {
   width: 100%;
-  background: #2b2b2b;
   z-index: 10;
   position: fixed;
   top: 0;
@@ -107,22 +106,28 @@ header {
       .header-nav-list__item img {
         width: 250px; } }
 .header-info {
-  color: #fff; }
-
-.page__button {
-  display: block;
-  text-transform: uppercase;
-  border: 2px solid #fff;
   color: #fff;
-  background: transparent;
-  outline: none;
-  cursor: pointer;
-  border-radius: 15px;
-  padding: 10px;
-  font-family: 'Roboto Condensed', sans-serif;
-  letter-spacing: 0.5px; }
-  .page__button:hover {
-    background: #fff;
-    color: #000; }
+  text-align: right; }
+
+.page {
+  padding: 50px 0 100px 0; }
+  .page__button {
+    display: block;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.5px; }
+    .page__button:hover {
+      background: #fff;
+      color: #000; }
+  .page__title {
+    text-align: center;
+    font-size: 43px; }
 
 /*# sourceMappingURL=main.css.map */

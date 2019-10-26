@@ -64,7 +64,7 @@ body {
 
 header {
   width: 100%;
-  background: #2b2b2b;
+  // background: #2b2b2b;
   z-index: 10;
   position: fixed;
   top: 0;
@@ -134,10 +134,12 @@ header {
   }
   &-info {
     color: #fff;
+    text-align: right;
   }
 }
 
 .page {
+  padding: 50px 0 100px 0;
   &__button {
     display: block;
     text-transform: uppercase;
@@ -154,5 +156,9 @@ header {
       background: #fff;
       color: #000;
     }
+  }
+  &__title {
+    text-align: center;
+    font-size: 43px;
   }
 }
