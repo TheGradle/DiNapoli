@@ -21,6 +21,7 @@ body {
     background-image: url(../img/slide-1.webp);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-attachment: fixed;
     position: relative; }
     .page-main-slide:after {
       position: absolute;
