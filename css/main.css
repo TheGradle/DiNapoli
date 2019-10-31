@@ -175,6 +175,7 @@ header {
     margin-bottom: 25px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between; }
 
 /*# sourceMappingURL=main.css.map */
