@@ -79,10 +79,20 @@ body {
     border-radius: 15px;
     padding: 10px;
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
     letter-spacing: 0.5px; }
     .page__button:hover {
       background: #fff;
       color: #000; }
+    .page__button_dark {
+      border: 2px solid #2b2b2b;
+      color: #2b2b2b;
+      text-decoration: none;
+      width: 115px;
+      text-align: center; }
+      .page__button_dark:hover {
+        background: #2b2b2b;
+        color: #fff; }
   .page__title {
     color: #fff;
     text-align: center;
@@ -177,5 +187,19 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
+
+.block-schedule {
+  text-align: center;
+  color: #2b2b2b; }
+  .block-schedule__time {
+    font-size: 220px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .block-schedule__time sup {
+      vertical-align: super;
+      font-size: 100px; }
+  .block-schedule__subtitle {
+    font-size: 62px;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */

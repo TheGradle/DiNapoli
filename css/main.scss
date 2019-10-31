@@ -92,10 +92,22 @@ body {
     border-radius: 15px;
     padding: 10px;
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
     letter-spacing: 0.5px;
     &:hover {
       background: #fff;
       color: #000;
+    }
+    &_dark {
+      border: 2px solid $main-color;
+      color: $main-color;
+      text-decoration: none;
+      width: 115px;
+      text-align: center;
+      &:hover {
+        background: $main-color;
+        color: #fff;
+      }
     }
   }
   &__title {
@@ -221,5 +233,23 @@ header {
       flex-wrap: wrap;
       justify-content: space-between;
     }
+  }
+}
+
+.block-schedule {
+  text-align: center;
+  color: $main-color;
+  &__time {
+    font-size: 220px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    sup {
+      vertical-align: super;
+      font-size: 100px;
+    }
+  }
+  &__subtitle {
+    font-size: 62px;
+    text-transform: uppercase;
   }
 }
