@@ -1,7 +1,7 @@
 var place = document.querySelector('.page-main-slide'),
     header = document.querySelector('header'),
-    currentSlide = 2,
-    currentOpacity = 0;
+    toTop = document.querySelector('.button-top'),
+    currentSlide = 2;
 
 setInterval(nextSlide, 3000);
 
@@ -11,7 +11,6 @@ function nextSlide() {
   }
 
   place.style.backgroundImage = "url(img/slide-" + currentSlide + ".webp";
-  currentOpacity = 0;
 
   currentSlide++;
 }
@@ -22,4 +21,11 @@ window.addEventListener('scroll', function() {
   } else if (pageYOffset <= 150) {
     header.style.background = "none";
   }
+
+  if (pageYOffset >= 300) {
+    toTop.style.opacity = "1";
+  } else if (pageYOffset <= 300) {
+    toTop.style.opacity = "0";
+  }
 });
+
