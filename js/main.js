@@ -28,4 +28,3 @@ window.addEventListener('scroll', function() {
     toTop.style.opacity = "0";
   }
 });
-
