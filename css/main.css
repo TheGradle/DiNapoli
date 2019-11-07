@@ -338,6 +338,7 @@ header {
   max-width: 400px;
   font-size: 18px;
   margin-left: 95px;
+  padding: 0 10px 0 10px;
 }
 @media (max-width: 1195px) {
   .block-about-text__subtitle {
