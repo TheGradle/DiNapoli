@@ -38,8 +38,6 @@ textarea {
 
 .button-top {
   background: rgba(43, 43, 43, 0.8);
-  width: 45px;
-  height: 45px;
   border-radius: 5px;
   position: fixed;
   bottom: 25px;
@@ -48,7 +46,10 @@ textarea {
   opacity: 0;
   svg {
     display: block;
-    margin: 0 auto;
+    padding: 11px;
+  }
+  &:hover {
+    background: $main-color;
   }
 }
 
@@ -343,6 +344,7 @@ header {
       justify-content: space-between;
       &-item {
         position: relative;
+        cursor: pointer;
         &__img {
           width: 100%;
           height: 100%;
@@ -421,28 +423,40 @@ header {
 
 footer {
   width: 100%;
-  height: 50px;
+  height: auto;
   background: $main-color;
 }
 
 .footer {
-  &-nav {
-    display: flex;
-    &__item {
-      a {
-        color: #fff;
-        text-decoration: none;
-        line-height: 50px;
-        margin-right: 15px;
-        &:hover {
-          text-decoration: underline;
+  display: flex;
+  justify-content: space-between;
+  &-left {
+    &-nav {
+      display: flex;
+      &__item {
+        a {
+          color: #fff;
+          text-decoration: none;
+          line-height: 50px;
+          margin-right: 15px;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
+    }
+    &__copy {
+      color: #fff;
+      margin-bottom: 15px;
     }
   }
   &-soc {
     &-list {
       display: flex;
+      margin-top: 15px;
+      &__item {
+        margin-right: 15px;
+      }
     }
   }
 }
