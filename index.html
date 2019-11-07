@@ -34,9 +34,21 @@
     <header class="transition">
       <div class="header-soc">
         <ul class="header-soc-list">
-          <li class="header-soc-list__item"><a href="https://www.instagram.com/dinapoli_mkv/" target="_blank"><img src="img/svg/instagram-logo.svg" width="15"></a></li>
-          <li class="header-soc-list__item"><a href="https://www.facebook.com/DiNapoli-119557949450002/?ref=bookmarks" target="_blank"><img src="img/svg/facebook-logo.svg" width="15"></a></li>
-          <li class="header-soc-list__item"><a href="https://t.me/dinapoli_mk" target="_blank"><img src="img/svg/telegram-logo.svg" width="15"></a></li>
+          <li class="header-soc-list__item">
+            <a href="https://www.instagram.com/dinapoli_mkv/" target="_blank">
+              <img src="img/svg/instagram-logo.svg" width="15">
+            </a>
+          </li>
+          <li class="header-soc-list__item">
+            <a href="https://www.facebook.com/DiNapoli-119557949450002/?ref=bookmarks" target="_blank">
+              <img src="img/svg/facebook-logo.svg" width="15">
+            </a>
+          </li>
+          <li class="header-soc-list__item">
+            <a href="https://t.me/dinapoli_mk" target="_blank">
+              <img src="img/svg/telegram-logo.svg" width="15">
+            </a>
+          </li>
         </ul>
       </div>
       <div class="header-nav">
@@ -76,15 +88,15 @@
   </div>
   <div class="page" id="about">
     <div class="block-about">
-      <div class="block-about-title"><img src="img/logo-1500.png" class="block-about-title__img" width="350"></div>
-      <div class="wrap">
-        <p class="block-about__text">Кафе "DiNapoli" вобрал в себя лучшие традиции итальянской кухни. Уютное место, непринужденная обстановка, которая подходит для детей и больших компаний - основные преимущества нашего заведения. Также, доступный уровень цен позволил нам оказаться в списке достойных кафе Николаева. "DiNapoli" - единственная точка в городе корабелов, где изображены все краски Италии! Стоит подчеркнуть, что именно у нас Вы получаете максимальную консультацию и море позитивных эмоций от официантов, которые всегда пожелают Вам "buon appetito"! Кто хоть раз побывал в этом ресторане, возвращается вновь и рекомендует "DiNapoli" своим друзьям.</p>
-        <img src="img/about.webp" class="block-about__collage">
+      <div class="block-about-text">
+        <div class="block-about-text-title"><img src="img/logo-1500.png" class="block-about-text-title__img" width="350"></div>
+        <p class="block-about-text__subtitle">Кафе "DiNapoli" вобрал в себя лучшие традиции итальянской кухни. Уютное место, непринужденная обстановка, которая подходит для детей и больших компаний - основные преимущества нашего заведения. Также, доступный уровень цен позволил нам оказаться в списке достойных кафе Николаева. "DiNapoli" - единственная точка в городе корабелов, где изображены все краски Италии! Стоит подчеркнуть, что именно у нас Вы получаете максимальную консультацию и море позитивных эмоций от официантов, которые всегда пожелают Вам "buon appetito"! Кто хоть раз побывал в этом ресторане, возвращается вновь и рекомендует "DiNapoli" своим друзьям.</p>
       </div>
+      <img src="img/about.webp" class="block-about__img">
     </div>
   </div>
-  <div class="page" id="menu">
-    <div class="page-title page-title_menu">
+  <div class="page">
+    <div class="page-title page-title_menu" id="menu">
       <h2 class="page-title__text">Меню</h2>
     </div>
     <div class="block-menu">
@@ -329,8 +341,8 @@
       <a href="files/Меню DiNapoli.pdf" class="page__button page__button_dark wrap transition" target="_blank">Скачать меню</a>
     </div>
   </div>
-  <div class="page" id="reviews">
-    <div class="page-title page-title_reviews">
+  <div class="page">
+    <div class="page-title page-title_reviews" id="reviews">
       <h2 class="page-title__text">Отзывы</h2>
     </div>
     <div class="wrap">
@@ -339,8 +351,8 @@
       </div>
     </div>
   </div>
-  <div class="page" id="feedback">
-    <div class="page-title page-title_feedback">
+  <div class="page">
+    <div class="page-title page-title_feedback" id="feedback">
       <h2 class="page-title__text">Связь</h2>
     </div>
     <div class="wrap">
@@ -348,7 +360,7 @@
         <form class="block-feedback-form" method="POST" action="">
           <input class="block-feedback-form__input" type="text" name="" placeholder="Ваше имя">
           <input class="block-feedback-form__input" type="text" name="" placeholder="Ваш email">
-          <textarea class="block-feedback-form__input block-feedback-form__text" name="message" placeholder="Ваше сообщение"></textarea>
+          <!--<textarea class="block-feedback-form__input block-feedback-form__text" name="message" placeholder="Ваше сообщение"></textarea>-->
           <!-- captha -->
           <button class="page__button page__button_dark transition" type="submit" name="">Отправить</button>
         </form>
@@ -356,8 +368,8 @@
     </div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.0403306428884!2d32.05488311542962!3d46.94124644169497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5cb0cf3832a27%3A0xc3e86864300bce9d!2sDiNapoli!5e0!3m2!1sru!2sua!4v1572514819307!5m2!1sru!2sua" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" id="place"></iframe>
   </div>
-  <div class="page" id="schedule">
-    <div class="page-title page-title_schedule">
+  <div class="page">
+    <div class="page-title page-title_schedule" id="schedule">
       <h2 class="page-title__text">График</h2>
     </div>
     <div class="wrap">
@@ -368,7 +380,35 @@
     </div>
   </div>
   <footer>
-    
+    <div class="wrap">
+      <ul class="footer-nav">
+        <li class="footer-nav__item"><a href="#about" class="transition">О нас</a></li>
+        <li class="footer-nav__item"><a href="#menu" class="transition">Меню</a></li>
+        <li class="footer-nav__item"><a href="#reviews" class="transition">Отзывы</a></li>
+        <li class="footer-nav__item"><a href="#feedback" class="transition">Связь</a></li> 
+        <li class="footer-nav__item"><a href="#place" class="transition">Место</a></li>
+        <li class="footer-nav__item"><a href="#schedule" class="transition">График</a></li>
+      </ul>
+      <div class="footer-soc">
+        <ul class="footer-soc-list">
+          <li class="footer-soc-list__item">
+            <a href="https://www.instagram.com/dinapoli_mkv/" target="_blank">
+              <img src="img/svg/instagram-logo.svg" width="15">
+            </a>
+          </li>
+          <li class="footer-soc-list__item">
+            <a href="https://www.facebook.com/DiNapoli-119557949450002/?ref=bookmarks" target="_blank">
+              <img src="img/svg/facebook-logo.svg" width="15">
+            </a>
+          </li>
+          <li class="footer-soc-list__item">
+            <a href="https://t.me/dinapoli_mk" target="_blank">
+              <img src="img/svg/telegram-logo.svg" width="15">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
   <a href="#main"><div class="button-top transition"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 284 284" fill="#fff"><path d="M282.082 195.285L149.028 62.24c-1.901-1.903-4.088-2.856-6.562-2.856s-4.665.953-6.567 2.856L2.856 195.285C.95 197.191 0 199.378 0 201.853c0 2.474.953 4.664 2.856 6.566l14.272 14.271c1.903 1.903 4.093 2.854 6.567 2.854s4.664-.951 6.567-2.854l112.204-112.202 112.208 112.209c1.902 1.903 4.093 2.848 6.563 2.848 2.478 0 4.668-.951 6.57-2.848l14.274-14.277c1.902-1.902 2.847-4.093 2.847-6.566.001-2.476-.944-4.666-2.846-6.569z"/></svg></div></a>
   <script src="js/main.min.js"></script>
