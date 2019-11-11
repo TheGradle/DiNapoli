@@ -612,7 +612,7 @@ footer {
             justify-content: center;
   }
 }
-@media (max-width: 377px) {
+@media (max-width: 408px) {
   .footer-left-nav__item {
     display: none;
   }
@@ -630,7 +630,7 @@ footer {
   color: #fff;
   margin-bottom: 15px;
 }
-@media (max-width: 377px) {
+@media (max-width: 408px) {
   .footer-left__copy {
     margin-top: 15px;
   }

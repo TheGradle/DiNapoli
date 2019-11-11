@@ -526,7 +526,7 @@ footer {
         justify-content: center;
       }
       &__item {
-        @media (max-width: 377px) {
+        @media (max-width: 408px) {
           display: none;
         }
         a {
@@ -541,7 +541,7 @@ footer {
       }
     }
     &__copy {
-      @media (max-width: 377px) {
+      @media (max-width: 408px) {
         margin-top: 15px;
       }
       color: #fff;
