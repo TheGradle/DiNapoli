@@ -91,7 +91,7 @@ textarea {
         padding: 5px 0 5px 0;
         width: 100%;
         text-align: center;
-        top: 235px;
+        top: 30%;
         left: 0;
         border-radius: 0;
       }
@@ -112,6 +112,9 @@ textarea {
 
 .page {
   padding-top: 100px;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
   &-title {
     width: 100%;
     height: 400px;
@@ -140,12 +143,21 @@ textarea {
         background-size: auto;
       }
     }
-    &_schedule {
+    &_reservation {
       background: url(../img/schedule-title.webp) no-repeat;
       background-size: 100%;
       background-attachment: fixed;
       @media (max-width: 1195px) {
         background-size: auto;
+      }
+      @media (max-width: 355px) {
+        position: relative;
+        h2 {
+          position: absolute;
+          top: 50%;
+          margin-top: -80px;
+          line-height: unset;
+        }
       }
     }
     &__text {
@@ -186,7 +198,7 @@ textarea {
       @media (max-width: 1195px) {
         line-height: 50px;
         padding: 0;
-        width: 100%;
+        width: 99%;
       }
       &:hover {
         background: $main-color;
@@ -244,12 +256,15 @@ header {
     }
     &-list {
       display: flex;
+      &:last-child {
+        margin-left: 0;
+      }
       &__item {
         text-transform: uppercase;
         margin: auto 0;
-        margin-right: 25px;
+        margin-left: 25px;
         @media (max-width: 1190px) {
-          margin-right: 18px;
+          margin-left: 18px;
         }
         a {
           text-decoration: none;
@@ -493,10 +508,27 @@ footer {
 .footer {
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1300px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (max-width: 520px) {
+    flex-wrap: wrap;
+  }
   &-left {
+    @media (max-width: 520px) {
+      width: 100%;
+      text-align: center;
+    }
     &-nav {
       display: flex;
+      @media (max-width: 520px) {
+        justify-content: center;
+      }
       &__item {
+        @media (max-width: 377px) {
+          display: none;
+        }
         a {
           color: #fff;
           text-decoration: none;
@@ -509,14 +541,24 @@ footer {
       }
     }
     &__copy {
+      @media (max-width: 377px) {
+        margin-top: 15px;
+      }
       color: #fff;
       margin-bottom: 15px;
     }
   }
   &-soc {
+    @media (max-width: 520px) {
+      width: 100%;
+      margin-bottom: 15px;
+    }
     &-list {
       display: flex;
       margin-top: 15px;
+      @media (max-width: 520px) {
+        justify-content: center;
+      }
       &__item {
         margin-right: 15px;
       }
