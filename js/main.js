@@ -2,6 +2,7 @@ var place = document.querySelector('.page-main-slide'),
     header = document.querySelector('header'),
     toTop = document.querySelector('.button-top'),
     currentSlide = 2,
+    pageMain = document.querySelector('.page-main');
     preloader = document.querySelector('.page-preloader');
 
 setInterval(nextSlide, 3000);
