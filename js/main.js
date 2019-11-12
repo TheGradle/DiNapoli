@@ -1,7 +1,8 @@
 var place = document.querySelector('.page-main-slide'),
     header = document.querySelector('header'),
     toTop = document.querySelector('.button-top'),
-    currentSlide = 2;
+    currentSlide = 2,
+    preloader = document.querySelector('.page-preloader');
 
 setInterval(nextSlide, 3000);
 
@@ -27,4 +28,12 @@ window.addEventListener('scroll', function() {
   } else if (pageYOffset <= 300) {
     toTop.style.opacity = "0";
   }
+});
+
+window.addEventListener('load', function() {
+  setTimeout (function() {
+    if (!preloader.classList.contains('page-preloader_done')) {
+      preloader.classList.add('page-preloader_done');
+    }
+  }, 1000);
 });
