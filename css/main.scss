@@ -307,13 +307,32 @@ header {
         height: 50px;
         position: absolute;
         left: 20px;
+        @media (max-width: 535px) {
+          width: 40px;
+          height: 40px;
+        }
       }
       &__logo {
         margin: 0 auto;
         display: block;
+        @media (max-width: 535px) {
+          width: 250px;
+        }
       }
       &-menu {
         display: none;
+        margin-left: 30px;
+        &-list {
+          margin-top: 15px;
+          &__item {
+            margin-bottom: 20px;
+            a {
+              text-decoration: none;
+              color: #fff;
+              font-size: 26px;
+            }
+          }
+        }
       }
     }
     &-list {

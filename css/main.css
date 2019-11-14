@@ -348,12 +348,35 @@ header {
   position: absolute;
   left: 20px;
 }
+@media (max-width: 535px) {
+  .header-nav-mobile__hamb {
+    width: 40px;
+    height: 40px;
+  }
+}
 .header-nav-mobile__logo {
   margin: 0 auto;
   display: block;
 }
+@media (max-width: 535px) {
+  .header-nav-mobile__logo {
+    width: 250px;
+  }
+}
 .header-nav-mobile-menu {
   display: none;
+  margin-left: 30px;
+}
+.header-nav-mobile-menu-list {
+  margin-top: 15px;
+}
+.header-nav-mobile-menu-list__item {
+  margin-bottom: 20px;
+}
+.header-nav-mobile-menu-list__item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 26px;
 }
 .header-nav-list {
   display: -webkit-box;
