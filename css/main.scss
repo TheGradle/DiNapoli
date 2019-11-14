@@ -146,37 +146,29 @@ textarea {
     width: 100%;
     height: 400px;
     background: url(../img/slide-1.webp) no-repeat;
+    @media (max-width: 1195px) {
+      background-size: auto !important;
+      height: 250px;
+    }
     &_menu {
       background: url(../img/menu-title.webp) no-repeat;
       background-size: 100%;
       background-attachment: fixed;
-      @media (max-width: 1195px) {
-        background-size: auto;
-      }
     }
     &_reviews {
       background: url(../img/reviews-title.webp) no-repeat;
       background-size: 100%;
       background-attachment: fixed;
-      @media (max-width: 1195px) {
-        background-size: auto;
-      }
     }
     &_feedback {
       background: url(../img/feedback-title.webp) no-repeat;
       background-size: 100%;
       background-attachment: fixed;
-      @media (max-width: 1195px) {
-        background-size: auto;
-      }
     }
     &_reservation {
       background: url(../img/schedule-title.webp) no-repeat;
       background-size: 100%;
       background-attachment: fixed;
-      @media (max-width: 1195px) {
-        background-size: auto;
-      }
       @media (max-width: 355px) {
         position: relative;
         h2 {
@@ -193,6 +185,9 @@ textarea {
       text-transform: uppercase;
       text-align: center;
       line-height: 400px;
+      @media (max-width: 1195px) {
+        line-height: 250px;
+      }
     }
   }
   &__button {
@@ -282,6 +277,9 @@ header {
 .header {
   &-soc-list {
     display: flex;
+    @media (max-width: 1095px) {
+      display: none;
+    }
     &__item {
       margin-right: 20px;
       &:last-child {
@@ -296,18 +294,32 @@ header {
   &-nav {
     &-mobile {
       display: none;
+      position: relative;
+      width: 100%;
+      @media (max-width: 1095px) {
+        display: block;
+      }
       &__hamb {
         background: url(../img/svg/menu.svg) no-repeat center;
         border: none;
         outline: none;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 20px;
+      }
+      &__logo {
+        margin: 0 auto;
+        display: block;
       }
       &-menu {
         display: none;
       }
     }
     &-list {
+      @media (max-width: 1095px) {
+        display: none;
+      }
       display: flex;
       &:last-child {
         margin-left: 0;
@@ -341,6 +353,9 @@ header {
   &-info {
     color: #fff;
     text-align: right;
+    @media (max-width: 1095px) {
+      display: none;
+    }
   }
 }
 
@@ -591,6 +606,7 @@ header {
       border-left: none;
       border-top: 3px dotted $main-color;
       padding-left: 15px;
+      padding-right: 15px;
       padding-top: 30px;
       margin: 0 auto;
     }
