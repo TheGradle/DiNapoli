@@ -95,10 +95,15 @@ textarea {
       top: 390px;
       left: 150px;
       background: rgba(43, 43, 43, .7);
+      text-decoration: none;
       @media (max-width: 1195px) {
         top: unset;
         left: 0;
         bottom: 25px;
+        text-align: center;
+        line-height: 50px;
+        padding: 0;
+        width: 99%;
       }
     }
   }
@@ -215,7 +220,7 @@ textarea {
       border: 2px solid $main-color;
       color: $main-color;
       text-decoration: none;
-      width: 115px;
+      width: 200px;
       text-align: center;
       @media (max-width: 1195px) {
         line-height: 50px;
@@ -232,6 +237,32 @@ textarea {
     color: #fff;
     text-align: center;
     font-size: 43px;
+  }
+  &-form {
+    &__input {
+      display: block;
+      width: 100%;
+      height: 50px;
+      margin-bottom: 15px;
+      border-left: none;
+      border-top: 2px solid $main-color;
+      border-right: none;
+      border-bottom: 2px solid $main-color;
+      padding-left: 5px;
+      outline: none;
+      font-size: 15px;
+      box-sizing: border-box;
+      &_date {
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+    }
+    &__message {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      resize: none;
+      font-size: 16px;
+      height: 90px;
+    }
   }
 }
 
@@ -437,7 +468,8 @@ header {
 }
 
 .block-reviews {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -503,28 +535,6 @@ header {
       padding-right: 15px;
       padding-bottom: 30px;
     }
-    &-form {
-      &__input {
-        display: block;
-        width: 100%;
-        height: 50px;
-        margin-bottom: 15px;
-        border-left: none;
-        border-top: 2px solid $main-color;
-        border-right: none;
-        border-bottom: 2px solid $main-color;
-        /*padding-left: 15px;
-        padding-right: 15px; bag!!!!*/ 
-        outline: none;
-        font-size: 15px;
-      }
-      &__message {
-        padding-top: 15px;
-        resize: none;
-        font-size: 16px;
-        box-sizing: border-box;
-      }
-    }
   }
   &-right {
     width: 50%;
@@ -548,6 +558,46 @@ header {
         &__item {
           margin-right: 15px;
         } 
+      }
+    }
+  }
+}
+
+.block-reservation {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+  &-left {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 30px;
+    @media (max-width: 768px) {
+      width: 100%;
+      padding-right: 15px;
+      padding-bottom: 30px;
+    }
+  }
+  &-right {
+    width: 50%;
+    border-left: 3px dotted $main-color;
+    padding-left: 30px;
+    font-size: 18px;
+    @media (max-width: 768px) {
+      width: 100%;
+      border-left: none;
+      border-top: 3px dotted $main-color;
+      padding-left: 15px;
+      padding-top: 30px;
+      margin: 0 auto;
+    }
+    &__img {
+      @media (max-width: 768px) {
+        display: block;
+        margin: 0 auto;
       }
     }
   }

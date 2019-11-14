@@ -86,7 +86,7 @@
     </header>
     <div class="page-main-slide">
       <h1 class="page-main-slide__title">Все краски Италии</h1>
-      <button class="page__button transition">Зарезервировать стол</button>
+      <a href="#reservation" class="page__button transition">Зарезервировать стол</a>
     </div>
   </div>
   <div class="page" id="about">
@@ -380,8 +380,8 @@
             <img src="img/svg/star.svg" class="block-reviews-item-assessment__star">
           </div>
         </div>
-        <a href="https://www.google.com/maps/place/DiNapoli,+%D0%B0%2F4,+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%9C%D0%B8%D1%80%D1%83,+25,+%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2,+%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@46.9412428,32.0570718,17z/data=!4m2!3m1!1s0x40c5cb0cf3832a27:0xc3e86864300bce9d" target="_blank" class="page__button page__button_dark transition">Посмотреть все отзывы</a>
       </div>
+      <a href="https://www.google.com/maps/place/DiNapoli,+%D0%B0%2F4,+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%9C%D0%B8%D1%80%D1%83,+25,+%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2,+%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@46.9412428,32.0570718,17z/data=!4m2!3m1!1s0x40c5cb0cf3832a27:0xc3e86864300bce9d" target="_blank" class="page__button page__button_dark transition wrap">Посмотреть все отзывы</a>
     </div>
   </div>
   <div class="page">
@@ -391,10 +391,10 @@
     <div class="wrap">
       <div class="block-feedback">
         <div class="block-feedback-left">
-          <form class="block-feedback-left-form" method="POST" action="">
-            <input class="block-feedback-left-form__input" type="text" name="" placeholder="Ваше имя">
-            <input class="block-feedback-left-form__input" type="text" name="" placeholder="Ваш email">
-            <textarea class="block-feedback-left-form__input block-feedback-left-form__message" name="message" placeholder="Ваше сообщение"></textarea>
+          <form class="page-form block-feedback-left-form" method="POST" action="">
+            <input class="page-form__input block-feedback-left-form__input" type="text" name="" placeholder="Ваше имя">
+            <input class="page-form__input block-feedback-left-form__input" type="text" name="" placeholder="Ваш email">
+            <textarea class="page-form__input page-form__message block-feedback-left-form__input block-feedback-left-form__message" name="message" placeholder="Ваше сообщение"></textarea>
             <!-- captha -->
             <button class="page__button page__button_dark transition" type="submit" name="">Отправить</button>
           </form>
@@ -432,7 +432,19 @@
     </div>
     <div class="wrap">
       <div class="block-reservation">
-        
+        <div class="block-reservation-left">
+          <form class="page-form block-reservation-form" method="POST" action="">
+            <input class="page-form__input block-reservation-form__input" type="text" name="" placeholder="Ваше имя">
+            <input class="page-form__input block-reservation-form__input" type="text" name="" placeholder="Ваш email">
+            <input class="page-form__input page-form__input_date block-reservation-form__input" type="date" name="" min="2019-11-14" max="2019-11-30">
+            <textarea class="page-form__input page-form__message block-reservation-form__input block-reservation-form__message" name="message" placeholder="Комментарий (необязательно)"></textarea>
+            <!-- captha -->
+            <button class="page__button page__button_dark transition" type="submit" name="">Зарезервировать стол</button>
+          </form>
+        </div>
+        <div class="block-reservation-right">
+          <img src="img/desert-1.jpg" class="block-reservation-right__img" alt="">
+        </div>
       </div>
     </div>
   </div>
