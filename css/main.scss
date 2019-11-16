@@ -114,6 +114,9 @@ textarea {
   @media (max-width: 768px) {
     padding-top: 50px;
   }
+  &_nopad {
+    padding-top: 0;
+  }
   &-preloader {
     position: fixed;
     top: 0;
@@ -249,6 +252,11 @@ textarea {
       box-sizing: border-box;
       &_date {
         font-family: 'Roboto Condensed', sans-serif;
+        &::-webkit-inner-spin-button { display: none; }
+        &::-webkit-datetime-edit-text { color: #000; }
+        &::-webkit-datetime-edit-month-field { color: #000; }
+        &::-webkit-datetime-edit-day-field { color: #000; }
+        &::-webkit-datetime-edit-year-field { color: #000; }
       }
     }
     &__message {
@@ -284,10 +292,6 @@ header {
       margin-right: 20px;
       &:last-child {
         margin-right: 0;
-      }
-      a img:hover {
-        position: relative;
-        top: -5px;
       }
     }
   }
@@ -527,16 +531,13 @@ header {
         max-width: 380px;
         margin: 0 auto;
       }
-      &_main {
-        font-size: 22px;
-      }
     }
     &-assessment {
       margin-top: 15px;
       display: flex;
       justify-content: center;
       &__star {
-        width: 50px;
+        width: 30px;
         margin-right: 10px;
         &:last-child {
           margin-right: 0;
@@ -544,6 +545,9 @@ header {
       }
     }
     &_main {
+      &__text {
+        font-size: 22px !important;
+      }
       @media (max-width: 1024px) {
         order: -1;
       }
@@ -644,7 +648,7 @@ header {
 footer {
   width: 100%;
   height: auto;
-  background: $main-color;
+  background: #1e1e1e;
 }
 
 .footer {
