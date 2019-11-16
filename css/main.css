@@ -282,6 +282,7 @@ textarea {
   font-size: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background: inherit;
 }
 .page-form__input_date {
   font-family: 'Roboto Condensed', sans-serif;
