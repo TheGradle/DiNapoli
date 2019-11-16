@@ -286,7 +286,8 @@ textarea {
 }
 .page-form__input_date {
   font-family: 'Roboto Condensed', sans-serif;
-  line-height: 50px;
+  /*padding-top: 13px;
+  padding-left: 0px;*/
 }
 .page-form__input_date::-webkit-inner-spin-button {
   display: none;
@@ -567,7 +568,7 @@ header {
 }
 @media (max-width: 768px) {
   .block-menu-item-slider-item {
-    width: 60%;
+    width: 49%;
   }
 }
 .block-menu-item-slider-item__img {
