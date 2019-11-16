@@ -253,6 +253,7 @@ textarea {
       background: inherit;
       &_date {
         font-family: 'Roboto Condensed', sans-serif;
+        line-height: 50px;
         &::-webkit-inner-spin-button { display: none; }
         &::-webkit-datetime-edit-text { color: #000; }
         &::-webkit-datetime-edit-month-field { color: #000; }
