@@ -26,7 +26,7 @@ function nextSlide() {
     currentSlide = 1;
   }
 
-  place.style.backgroundImage = "url(img/slide-" + currentSlide + ".webp";
+  place.style.backgroundImage = "url(img/slides/slide-" + currentSlide + ".webp";
 
   currentSlide++;
 }

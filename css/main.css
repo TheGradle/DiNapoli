@@ -66,7 +66,7 @@ textarea {
 .page-main-slide {
   width: 100%;
   height: 100%;
-  background-image: url(../img/slide-1.webp);
+  background-image: url(../img/slides/slide-1.webp);
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
@@ -83,7 +83,7 @@ textarea {
   height: 0;
   overflow: hidden;
   z-index: -1;
-  content: url(../img/slide-2.webp) url(../img/slide-3.webp) url(../img/slide-4.webp) url(../img/slide-5.webp);
+  content: url(../img/slides/slide-2.webp) url(../img/slides/slide-3.webp) url(../img/slides/slide-4.webp) url(../img/slides/slide-5.webp);
 }
 .page-main-slide__title {
   text-align: left;
@@ -170,7 +170,6 @@ textarea {
 .page-title {
   width: 100%;
   height: 400px;
-  background: url(../img/slide-1.webp) no-repeat;
 }
 @media (max-width: 1195px) {
   .page-title {
@@ -179,22 +178,22 @@ textarea {
   }
 }
 .page-title_menu {
-  background: url(../img/menu-title.webp) no-repeat;
+  background: url(../img/titles/menu-title.webp) no-repeat;
   background-size: 100%;
   background-attachment: fixed;
 }
 .page-title_reviews {
-  background: url(../img/reviews-title.webp) no-repeat;
+  background: url(../img/titles/reviews-title.webp) no-repeat;
   background-size: 100%;
   background-attachment: fixed;
 }
 .page-title_feedback {
-  background: url(../img/feedback-title.webp) no-repeat;
+  background: url(../img/titles/feedback-title.webp) no-repeat;
   background-size: 100%;
   background-attachment: fixed;
 }
 .page-title_reservation {
-  background: url(../img/schedule-title.webp) no-repeat;
+  background: url(../img/titles/schedule-title.webp) no-repeat;
   background-size: 100%;
   background-attachment: fixed;
 }
