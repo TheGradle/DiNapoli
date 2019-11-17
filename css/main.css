@@ -785,6 +785,7 @@ footer {
   width: 100%;
   height: auto;
   background: #1e1e1e;
+  display: none;
 }
 
 .footer {

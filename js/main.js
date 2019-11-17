@@ -6,6 +6,7 @@ var place = document.querySelector('.page-main-slide'),
     preloader = document.querySelector('.page-preloader'),
     pages = document.querySelectorAll('.page'),
     pageMain = document.querySelector('.page-main'),
+    footer = document.querySelector('footer'),
     hamb = document.querySelector('.header-nav-mobile__hamb'),
     hambMenu = document.querySelector('.header-nav-mobile-menu'),
     hambMenuCheck = false,
@@ -18,6 +19,7 @@ window.addEventListener('load', function() {
       preloader.classList.add('page-preloader_done');
       
       pageMain.style.display = "block";
+      footer.style.display = "block";
 
       pages.forEach(function(item) {
         item.style.display = "block";
