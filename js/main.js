@@ -72,5 +72,6 @@ hamb.addEventListener('click', function() {
 hambMenuLinks.forEach(function(item) {
   item.addEventListener('click', function() {
     hambMenu.style.display = "none";
+    hambMenuCheck = false;
   });
 });
