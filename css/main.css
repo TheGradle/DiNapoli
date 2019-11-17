@@ -69,7 +69,7 @@ textarea {
   height: 100%;
   background-image: url(../img/slides/slide-1.webp);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto;
   background-attachment: fixed;
   position: relative;
 }
@@ -181,22 +181,22 @@ textarea {
 }
 .page-title_menu {
   background: url(../img/titles/menu-title.webp) no-repeat;
-  background-size: 100%;
+  background-size: auto;
   background-attachment: fixed;
 }
 .page-title_reviews {
   background: url(../img/titles/reviews-title.webp) no-repeat;
-  background-size: 100%;
+  background-size: auto;
   background-attachment: fixed;
 }
 .page-title_feedback {
   background: url(../img/titles/feedback-title.webp) no-repeat;
-  background-size: 100%;
+  background-size: auto;
   background-attachment: fixed;
 }
 .page-title_reservation {
   background: url(../img/titles/schedule-title.webp) no-repeat;
-  background-size: 100%;
+  background-size: auto;
   background-attachment: fixed;
 }
 @media (max-width: 355px) {

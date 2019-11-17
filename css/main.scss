@@ -58,7 +58,7 @@ textarea {
     height: 100%;
     background-image: url(../img/slides/slide-1.webp);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
     background-attachment: fixed;
     position: relative;
     @media (max-width: 1195px) {
@@ -156,22 +156,22 @@ textarea {
     }
     &_menu {
       background: url(../img/titles/menu-title.webp) no-repeat;
-      background-size: 100%;
+      background-size: auto;
       background-attachment: fixed;
     }
     &_reviews {
       background: url(../img/titles/reviews-title.webp) no-repeat;
-      background-size: 100%;
+      background-size: auto;
       background-attachment: fixed;
     }
     &_feedback {
       background: url(../img/titles/feedback-title.webp) no-repeat;
-      background-size: 100%;
+      background-size: auto;
       background-attachment: fixed;
     }
     &_reservation {
       background: url(../img/titles/schedule-title.webp) no-repeat;
-      background-size: 100%;
+      background-size: auto;
       background-attachment: fixed;
       @media (max-width: 355px) {
         position: relative;
