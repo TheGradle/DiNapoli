@@ -10,9 +10,9 @@ var place = document.querySelector('.page-main-slide'),
     hambMenuLinks = document.querySelectorAll('.header-nav-mobile-menu-list__item');
 
 // Preloader
-document.body.style.display = "block";
 window.addEventListener('load', function() {
   setTimeout (function() {
+    document.body.style.display = "block";
     if (!preloader.classList.contains('page-preloader_done')) {
       preloader.classList.add('page-preloader_done');
     }
