@@ -261,6 +261,15 @@ textarea {
         &::-webkit-datetime-edit-month-field { color: #000; }
         &::-webkit-datetime-edit-day-field { color: #000; }
         &::-webkit-datetime-edit-year-field { color: #000; }
+        &:before {
+          content: attr(placeholder) !important;
+          color: #aaa;
+          margin-right: 0.5em;
+        }
+        &:focus:before,
+        &:valid:before {
+          content: "";
+        }
       }
     }
     &__message {

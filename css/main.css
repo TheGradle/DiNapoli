@@ -305,6 +305,14 @@ textarea {
 .page-form__input_date::-webkit-datetime-edit-year-field {
   color: #000;
 }
+.page-form__input_date:before {
+  content: attr(placeholder) !important;
+  color: #aaa;
+  margin-right: 0.5em;
+}
+.page-form__input_date:focus:before, .page-form__input_date:valid:before {
+  content: "";
+}
 .page-form__message {
   padding-top: 15px;
   padding-bottom: 15px;
