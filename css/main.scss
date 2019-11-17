@@ -267,6 +267,7 @@ textarea {
       font-size: 15px;
       box-sizing: border-box;
       background: inherit;
+      font-size: 16px;
       &_date {
         font-family: 'Roboto Condensed', sans-serif;
         padding: 13px 5px;
@@ -284,6 +285,7 @@ textarea {
         &:before { 
           content: attr(data-placeholder);
           width: 100%;
+          color: #8e8e8e;
         }
         &:focus::before,
         &:valid::before { 

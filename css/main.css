@@ -309,6 +309,7 @@ textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: inherit;
+  font-size: 16px;
 }
 .page-form__input_date {
   font-family: 'Roboto Condensed', sans-serif;
@@ -326,6 +327,7 @@ textarea {
 .page-form__input_date:before {
   content: attr(data-placeholder);
   width: 100%;
+  color: #8e8e8e;
 }
 .page-form__input_date:focus::before, .page-form__input_date:valid::before {
   display: none;
