@@ -4,6 +4,7 @@ var place = document.querySelector('.page-main-slide'),
     currentSlide = 2, // bc the first slide the user has already seen
     pageMain = document.querySelector('.page-main'),
     preloader = document.querySelector('.page-preloader'),
+    pages = document.querySelectorAll('.page'),
     hamb = document.querySelector('.header-nav-mobile__hamb'),
     hambMenu = document.querySelector('.header-nav-mobile-menu'),
     hambMenuCheck = false,
@@ -12,9 +13,9 @@ var place = document.querySelector('.page-main-slide'),
 // Preloader
 window.addEventListener('load', function() {
   setTimeout (function() {
-    document.body.style.display = "block";
     if (!preloader.classList.contains('page-preloader_done')) {
       preloader.classList.add('page-preloader_done');
+      pages.style.display = "block";
     }
   }, 1000);
 });
