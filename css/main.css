@@ -7,10 +7,6 @@ body {
   scroll-behavior: smooth;
 }
 
-body {
-  display: none;
-}
-
 textarea {
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -131,6 +127,7 @@ textarea {
 
 .page {
   padding-top: 100px;
+  display: none;
 }
 @media (max-width: 768px) {
   .page {
