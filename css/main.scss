@@ -466,6 +466,9 @@ header {
     @media (max-width: 1340px) {
       margin-right: 50px;
     }
+    @media (max-width: 1215px) {
+      width: 550px;
+    }
     @media (max-width: 1195px) {
       display: block;
       margin: 50px auto 0;
@@ -481,7 +484,7 @@ header {
       font-size: 32px;
       color: $main-color;
       margin-bottom: 15px;
-      @media (max-width: 1195px) {
+      @media (max-width: 1340px) {
         text-align: center;
       }
     }
@@ -492,15 +495,15 @@ header {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      @media (max-width: 1195px) {
+      @media (max-width: 1240px) {
         justify-content: space-around;
       }
       &-item {
         margin-top: 10px;
         position: relative;
         cursor: pointer;
-        @media (max-width: 1195px) {
-          width: 35%;
+        @media (max-width: 1240px) {
+          width: 32%;
         }
         @media (max-width: 768px) {
           width: 48%;
