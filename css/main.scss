@@ -10,6 +10,10 @@ body {
   scroll-behavior: smooth;
 }
 
+body {
+  display: none;
+}
+
 textarea {
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -40,7 +44,7 @@ textarea {
   right: 25px;
   margin: 0 auto;
   opacity: 0;
-  svg {
+  img {
     display: block;
     padding: 11px;
   }

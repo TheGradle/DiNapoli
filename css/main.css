@@ -7,6 +7,10 @@ body {
   scroll-behavior: smooth;
 }
 
+body {
+  display: none;
+}
+
 textarea {
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -51,7 +55,7 @@ textarea {
   margin: 0 auto;
   opacity: 0;
 }
-.button-top svg {
+.button-top img {
   display: block;
   padding: 11px;
 }

@@ -10,6 +10,7 @@ var place = document.querySelector('.page-main-slide'),
     hambMenuLinks = document.querySelectorAll('.header-nav-mobile-menu-list__item');
 
 // Preloader
+document.body.style.display = "block";
 window.addEventListener('load', function() {
   setTimeout (function() {
     if (!preloader.classList.contains('page-preloader_done')) {
