@@ -5,6 +5,7 @@ var place = document.querySelector('.page-main-slide'),
     pageMain = document.querySelector('.page-main'),
     preloader = document.querySelector('.page-preloader'),
     pages = document.querySelectorAll('.page'),
+    pageMain = document.querySelector('.page-main'),
     hamb = document.querySelector('.header-nav-mobile__hamb'),
     hambMenu = document.querySelector('.header-nav-mobile-menu'),
     hambMenuCheck = false,
@@ -16,6 +17,8 @@ window.addEventListener('load', function() {
     if (!preloader.classList.contains('page-preloader_done')) {
       preloader.classList.add('page-preloader_done');
       
+      pageMain.style.display = "block";
+
       pages.forEach(function(item) {
         item.style.display = "block";
       });

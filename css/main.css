@@ -62,6 +62,7 @@ textarea {
 .page-main {
   width: 100%;
   height: inherit;
+  display: none;
 }
 .page-main-slide {
   width: 100%;
