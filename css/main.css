@@ -296,22 +296,15 @@ textarea {
 .page-form__input_date::-webkit-datetime-edit-text {
   color: #000;
 }
-.page-form__input_date::-webkit-datetime-edit-month-field {
-  color: #000;
-}
-.page-form__input_date::-webkit-datetime-edit-day-field {
-  color: #000;
-}
-.page-form__input_date::-webkit-datetime-edit-year-field {
+.page-form__input_date::-webkit-datetime-edit-month-field, .page-form__input_date::-webkit-datetime-edit-day-field, .page-form__input_date::-webkit-datetime-edit-year-field {
   color: #000;
 }
 .page-form__input_date:before {
-  content: attr(placeholder) !important;
-  color: #aaa;
-  margin-right: 0.5em;
+  content: attr(data-placeholder);
+  width: 100%;
 }
-.page-form__input_date:focus:before, .page-form__input_date:valid:before {
-  content: "";
+.page-form__input_date:focus::before, .page-form__input_date:valid::before {
+  display: none;
 }
 .page-form__message {
   padding-top: 15px;

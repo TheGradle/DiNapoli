@@ -256,19 +256,24 @@ textarea {
         font-family: 'Roboto Condensed', sans-serif;
         height: unset;
         padding: 13px 5px;
-        &::-webkit-inner-spin-button { display: none; }
-        &::-webkit-datetime-edit-text { color: #000; }
-        &::-webkit-datetime-edit-month-field { color: #000; }
-        &::-webkit-datetime-edit-day-field { color: #000; }
-        &::-webkit-datetime-edit-year-field { color: #000; }
-        &:before {
-          content: attr(placeholder) !important;
-          color: #aaa;
-          margin-right: 0.5em;
+        &::-webkit-inner-spin-button { 
+          display: none; 
         }
-        &:focus:before,
-        &:valid:before {
-          content: "";
+        &::-webkit-datetime-edit-text { 
+          color: #000; 
+        }
+        &::-webkit-datetime-edit-month-field,
+        &::-webkit-datetime-edit-day-field,
+        &::-webkit-datetime-edit-year-field { 
+          color: #000; 
+        }
+        &:before { 
+          content: attr(data-placeholder);
+          width: 100%;
+        }
+        &:focus::before,
+        &:valid::before { 
+          display: none 
         }
       }
     }
