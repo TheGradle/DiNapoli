@@ -15,7 +15,10 @@ window.addEventListener('load', function() {
   setTimeout (function() {
     if (!preloader.classList.contains('page-preloader_done')) {
       preloader.classList.add('page-preloader_done');
-      pages.style.display = "block";
+      
+      pages.forEach(function(item) {
+        item.style.display = "block";
+      });
     }
   }, 1000);
 });
