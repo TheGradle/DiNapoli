@@ -61,6 +61,9 @@ textarea {
     background-size: auto;
     background-attachment: fixed;
     position: relative;
+    @media (min-width: 1600px) {
+      background-size: 100%;
+    }
     @media (max-width: 1195px) {
       background-size: auto;
     }
@@ -158,21 +161,33 @@ textarea {
       background: url(../img/titles/menu-title.webp) no-repeat;
       background-size: auto;
       background-attachment: fixed;
+      @media (min-width: 1600px) {
+        background-size: 100%;
+      }
     }
     &_reviews {
       background: url(../img/titles/reviews-title.webp) no-repeat;
       background-size: auto;
       background-attachment: fixed;
+      @media (min-width: 1600px) {
+        background-size: 100%;
+      }
     }
     &_feedback {
       background: url(../img/titles/feedback-title.webp) no-repeat;
       background-size: auto;
       background-attachment: fixed;
+      @media (min-width: 1600px) {
+        background-size: 100%;
+      }
     }
     &_reservation {
       background: url(../img/titles/schedule-title.webp) no-repeat;
       background-size: auto;
       background-attachment: fixed;
+      @media (min-width: 1600px) {
+        background-size: 100%;
+      }
       @media (max-width: 355px) {
         position: relative;
         h2 {

@@ -73,6 +73,11 @@ textarea {
   background-attachment: fixed;
   position: relative;
 }
+@media (min-width: 1600px) {
+  .page-main-slide {
+    background-size: 100%;
+  }
+}
 @media (max-width: 1195px) {
   .page-main-slide {
     background-size: auto;
@@ -184,20 +189,40 @@ textarea {
   background-size: auto;
   background-attachment: fixed;
 }
+@media (min-width: 1600px) {
+  .page-title_menu {
+    background-size: 100%;
+  }
+}
 .page-title_reviews {
   background: url(../img/titles/reviews-title.webp) no-repeat;
   background-size: auto;
   background-attachment: fixed;
+}
+@media (min-width: 1600px) {
+  .page-title_reviews {
+    background-size: 100%;
+  }
 }
 .page-title_feedback {
   background: url(../img/titles/feedback-title.webp) no-repeat;
   background-size: auto;
   background-attachment: fixed;
 }
+@media (min-width: 1600px) {
+  .page-title_feedback {
+    background-size: 100%;
+  }
+}
 .page-title_reservation {
   background: url(../img/titles/schedule-title.webp) no-repeat;
   background-size: auto;
   background-attachment: fixed;
+}
+@media (min-width: 1600px) {
+  .page-title_reservation {
+    background-size: 100%;
+  }
 }
 @media (max-width: 355px) {
   .page-title_reservation {
