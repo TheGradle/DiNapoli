@@ -60,12 +60,12 @@ window.addEventListener('scroll', function() {
 // Hamburger menu
 hamb.addEventListener('click', function() {
   if (!hambMenuCheck) {
+    hambMenuCheck = true;
     header.style.background = "#2b2b2b";
     hambMenu.style.display = "block";
-    hambMenuCheck = true;
   } else if (hambMenuCheck) {
-    hambMenu.style.display = "none";
     hambMenuCheck = false;
+    hambMenu.style.display = "none";
   }
 });
 
