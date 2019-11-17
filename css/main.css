@@ -472,9 +472,7 @@ header {
 }
 @media (max-width: 1195px) {
   .block-about-text-title {
-    width: 100%;
-    padding: 10px 0;
-    height: unset;
+    display: none;
   }
 }
 .block-about-text-title__img {
@@ -568,7 +566,7 @@ header {
 }
 @media (max-width: 768px) {
   .block-menu-item-slider-item {
-    width: 49%;
+    width: 48%;
   }
 }
 .block-menu-item-slider-item__img {
