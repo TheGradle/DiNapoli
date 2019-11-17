@@ -287,7 +287,6 @@ textarea {
 }
 .page-form__input_date {
   font-family: 'Roboto Condensed', sans-serif;
-  height: unset;
   padding: 13px 5px;
 }
 .page-form__input_date::-webkit-inner-spin-button {
