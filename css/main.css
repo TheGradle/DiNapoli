@@ -287,8 +287,8 @@ textarea {
 }
 .page-form__input_date {
   font-family: 'Roboto Condensed', sans-serif;
-  /*padding-top: 13px;
-  padding-left: 0px;*/
+  height: unset;
+  padding: 13px 5px;
 }
 .page-form__input_date::-webkit-inner-spin-button {
   display: none;

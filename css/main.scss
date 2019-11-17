@@ -254,8 +254,8 @@ textarea {
       background: inherit;
       &_date {
         font-family: 'Roboto Condensed', sans-serif;
-        /*padding-top: 13px;
-        padding-left: 0px;*/
+        height: unset;
+        padding: 13px 5px;
         &::-webkit-inner-spin-button { display: none; }
         &::-webkit-datetime-edit-text { color: #000; }
         &::-webkit-datetime-edit-month-field { color: #000; }
