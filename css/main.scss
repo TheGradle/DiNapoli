@@ -188,12 +188,12 @@ textarea {
       @media (min-width: 1600px) {
         background-size: 100%;
       }
-      @media (max-width: 355px) {
+      @media (max-width: 445px) {
         position: relative;
         h2 {
           position: absolute;
           top: 50%;
-          margin-top: -80px;
+          margin-top: -66px;
           line-height: unset;
         }
       }
