@@ -12,6 +12,15 @@ var place = document.querySelector('.page-main-slide'),
     hambMenuCheck = false,
     hambMenuLinks = document.querySelectorAll('.header-nav-mobile-menu-list__item');
 
+if (window.NodeList && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = function (callback, thisArg) {
+        thisArg = thisArg || window;
+        for (var i = 0; i < this.length; i++) {
+            callback.call(thisArg, this[i], i, this);
+        }
+    };
+}
+
 // Preloader
 window.addEventListener('load', function() {
   setTimeout (function() {
