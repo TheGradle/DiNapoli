@@ -465,6 +465,7 @@ header {
   &__img {
     margin-right: 150px;
     margin-left: 50px;
+    height: inherit;
     @media (max-width: 1340px) {
       margin-right: 50px;
     }

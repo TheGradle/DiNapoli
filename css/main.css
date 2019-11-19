@@ -535,6 +535,7 @@ header {
 .block-about__img {
   margin-right: 150px;
   margin-left: 50px;
+  height: inherit;
 }
 @media (max-width: 1340px) {
   .block-about__img {
