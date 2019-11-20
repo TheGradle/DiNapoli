@@ -45,7 +45,7 @@ function nextSlide() {
     currentSlide = 1;
   }
 
-  if($.browser.mozilla) {
+  if(navigator.userAgent.toLowerCase().indexOf('firefox') !== -1) {
     place.style.backgroundImage = "url(img/slides/slide-" + currentSlide + ".jpg";
   } else {
     place.style.backgroundImage = "url(img/slides/slide-" + currentSlide + ".webp";
