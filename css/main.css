@@ -73,6 +73,11 @@ textarea {
   background-attachment: fixed;
   position: relative;
 }
+@-moz-document url-prefix() {
+  .page-main-slide {
+    background-image: url(../img/slides/slide-1.jpg);
+  }
+}
 @media (min-width: 1600px) {
   .page-main-slide {
     background-size: 100%;
@@ -90,6 +95,11 @@ textarea {
   overflow: hidden;
   z-index: -1;
   content: url(../img/slides/slide-2.webp) url(../img/slides/slide-3.webp) url(../img/slides/slide-4.webp) url(../img/slides/slide-5.webp);
+}
+@-moz-document url-prefix() {
+  .page-main-slide:after {
+    content: url(../img/slides/slide-2.jpg) url(../img/slides/slide-3.jpg) url(../img/slides/slide-4.jpg) url(../img/slides/slide-5.jpg);
+  }
 }
 .page-main-slide__title {
   text-align: left;
@@ -185,8 +195,7 @@ textarea {
   }
 }
 .page-title_menu {
-  background: url(../img/titles/menu-title.webp);
-  background-repeat: no-repeat;
+  background: url(../img/titles/menu-title.webp) no-repeat;
   background-size: auto;
   background-attachment: fixed;
 }
@@ -198,6 +207,8 @@ textarea {
 @-moz-document url-prefix() {
   .page-title_menu {
     background: url(../img/titles/menu-title.jpg);
+    background-size: auto;
+    background-attachment: fixed;
   }
 }
 .page-title_reviews {
@@ -211,6 +222,13 @@ textarea {
     background-size: 100%;
   }
 }
+@-moz-document url-prefix() {
+  .page-title_reviews {
+    background: url(../img/titles/reviews-title.jpg);
+    background-size: auto;
+    background-attachment: fixed;
+  }
+}
 .page-title_feedback {
   background: url(../img/titles/feedback-title.webp);
   background-repeat: no-repeat;
@@ -222,6 +240,13 @@ textarea {
     background-size: 100%;
   }
 }
+@-moz-document url-prefix() {
+  .page-title_feedback {
+    background: url(../img/titles/feedback-title.jpg);
+    background-size: auto;
+    background-attachment: fixed;
+  }
+}
 .page-title_reservation {
   background: url(../img/titles/schedule-title.webp);
   background-repeat: no-repeat;
@@ -231,6 +256,13 @@ textarea {
 @media (min-width: 1600px) {
   .page-title_reservation {
     background-size: 100%;
+  }
+}
+@-moz-document url-prefix() {
+  .page-title_reservation {
+    background: url(../img/titles/schedule-title.jpg);
+    background-size: auto;
+    background-attachment: fixed;
   }
 }
 @media (max-width: 445px) {
