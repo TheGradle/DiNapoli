@@ -158,16 +158,20 @@ textarea {
       height: 250px;
     }
     &_menu {
-      background: url(../img/titles/menu-title.webp) no-repeat;
-      -moz-background: url(../img/titles/menu-title.jpg) no-repeat;
+      background: url(../img/titles/menu-title.webp);
+      background-repeat: no-repeat;
       background-size: auto;
       background-attachment: fixed;
       @media (min-width: 1600px) {
         background-size: 100%;
       }
+      @-moz-document url-prefix() {
+        background: url(../img/titles/menu-title.jpg);
+      }
     }
     &_reviews {
-      background: url(../img/titles/reviews-title.webp) no-repeat;
+      background: url(../img/titles/reviews-title.webp);
+      background-repeat: no-repeat;
       background-size: auto;
       background-attachment: fixed;
       @media (min-width: 1600px) {
@@ -175,7 +179,8 @@ textarea {
       }
     }
     &_feedback {
-      background: url(../img/titles/feedback-title.webp) no-repeat;
+      background: url(../img/titles/feedback-title.webp);
+      background-repeat: no-repeat;
       background-size: auto;
       background-attachment: fixed;
       @media (min-width: 1600px) {
@@ -183,7 +188,8 @@ textarea {
       }
     }
     &_reservation {
-      background: url(../img/titles/schedule-title.webp) no-repeat;
+      background: url(../img/titles/schedule-title.webp);
+      background-repeat: no-repeat;
       background-size: auto;
       background-attachment: fixed;
       @media (min-width: 1600px) {
